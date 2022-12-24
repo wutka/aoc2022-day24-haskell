@@ -63,7 +63,7 @@ makeBlizzardGrid blizzards =
     blizzardToRC (Blizzard row col _) = (row,col)
 
 -- Add a location to the set of possible presences, as long as the
--- row and column are allowable and there isn't a blizzare in
+-- row and column are allowable and there isn't a blizzard in
 -- the location
 addPresence :: Int -> Int -> Set.Set (Int,Int) -> (Int,Int) -> Set.Set (Int,Int) -> Set.Set (Int,Int)
 addPresence numRows numCols blizzGrid rc@(row,col) presence =
